@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Chrome Extension Import in MV3",
+    "version": "0.0.1",
+    "description": "Chrome Extension Import in MV3",
+    "author": "mshibata",
+    "background": {
+      "service_worker": "background.js",
+      "type": "module"
+   },
+    "content_scripts": [{
+      "matches": ["https://*/*"],
+      "js": ["content_script.js"]
+    }],
+    "web_accessible_resources": [{
+      "resources": [ "*.js", "js/*" ],
+      "matches": [
+          "https://*/*"
+      ]
+    }]
+}

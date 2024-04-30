@@ -3,7 +3,7 @@
     "name": "Chrome Extension Import in MV3",
     "version": "0.0.1",
     "description": "Chrome Extension Import in MV3",
-    "author": "mshibata",
+    "author": "smasarudev",
     "background": {
       "service_worker": "background.js",
       "type": "module"
